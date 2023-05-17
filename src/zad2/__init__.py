@@ -107,7 +107,7 @@ class DHCAlgorithm:
         Y = pow(g, private_key_b, self.n)
 
         k_a = pow(Y, private_key_a, self.n)
-        k_b = pow(X, private_key_a, self.n)
+        k_b = pow(X, private_key_b, self.n)
 
         if self.debug:
             print(f"N: {Color.OKBLUE}{self.n}{Color.DEFAULT}")
